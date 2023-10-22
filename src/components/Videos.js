@@ -9,6 +9,7 @@ const Videos = ({info}) => {
     // const { snippet , statistics} = info
     // const { channelTitle , title , thumbnails} = snippet
   return (
+    <div className=''>
     <div className=' p-2 m-2 w-[330px] '>
         <img className='rounded-lg ' alt='thumbnail' src={info?.snippet?.thumbnails?.medium?.url}/>
         <ul>
@@ -20,6 +21,7 @@ const Videos = ({info}) => {
         </ul>
 
        
+    </div>
     </div>
   )
 }

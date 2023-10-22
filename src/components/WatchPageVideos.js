@@ -20,7 +20,7 @@ const WatchPageVideos = () => {
             {watchVideos.map((watchVideos) => {
                 return (
                     <Link to={"/watch?v="+watchVideos.id}  key={watchVideos.id}>
-                    <div className=' p-2 m-2 w-[402px] h-[120px] flex  justify-evenly items-top '>
+                    <div className=' md:p-2 md:m-2 md:ml-16 w-screen md:w-[402px] h-[120px] flex  justify-evenly items-top '>
                         <div className=''>
                             <img className='rounded-lg w-[168px] h-[94px] ' alt='thumbnail' src={watchVideos?.snippet?.thumbnails?.medium?.url} />
                         </div>

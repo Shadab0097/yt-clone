@@ -3,7 +3,8 @@ import Button from './Button'
 
 const ButtonList = () => {
   return (
-    <div className='flex mt-16 ml-24 fixed bg-white -z-10'>
+    <div className=''>
+    <div className='flex mt-16 md:ml-24 fixed w-screen bg-white -z-10  overflow-x-scroll md:overflow-x-hidden'>
       <Button name = "All"/>
       <Button name = "Live"/>
       <Button name = "Moon Landing"/>
@@ -15,6 +16,7 @@ const ButtonList = () => {
       <Button name = "Mantras"/>
       <Button name = "Gadget"/>
       <Button name = "Recently Uploaded"/>
+    </div>
     </div>
   )
 }

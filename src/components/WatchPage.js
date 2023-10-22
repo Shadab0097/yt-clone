@@ -28,12 +28,12 @@ const WatchPage = () => {
     }
     return (
         <>
-            <div className='flex absolute z-10'>
-                <div className='bg-white w-full'>
+            <div className='md:flex absolute z-10 w-screen md:w-[800px]'>
+                <div className='bg-white md:w-full'>
                     <div className='flex flex-col'>
-                        <div className='pl-5 mt-20 w-full'>
-                            <iframe width="800"
-                                height="460"
+                        <div className=' md:pl-5 mt-20 w-full md:w-[800px]'>
+                            <iframe  className='w-screen h-72 md:h-[460px] md:w-[800px]'
+                
                                 src={"https://www.youtube.com/embed/" + videoId}
                                 title="YouTube video player"
                                 frameBorder="0"
@@ -41,9 +41,9 @@ const WatchPage = () => {
                                 allowFullScreen>
                             </iframe>
                         </div>
-                        <div>{watchPageInfo && (
-                            <div className="px-6 py-3">
-                                <h1 className="text-xl font-bold">{watchPageInfo?.snippet?.title}</h1>
+                        <div className=''>{watchPageInfo && (
+                            <div className="px-3 md:px-6 py-3  w-screen md:w-auto ">
+                                <h1 className="text-xl font-bold ">{watchPageInfo?.snippet?.title}</h1>
                                 <h1 className="mt-2 text-l font-semibold">
                                     {watchPageInfo?.snippet?.channelTitle}
                                 </h1>
@@ -52,10 +52,10 @@ const WatchPage = () => {
                                 </h1>
                             </div>
                         )}</div>
-                        <div className='pt-4 pl-3 w-[800px]'>
+                        <div className='pt-4 md:pl-3 w-screen md:w-[800px]'>
                             <CommentContainor />
                         </div>
-                        <div className='w-[800px]'>
+                        <div className='md:w-[800px] w-screen'>
                             <LiveChatMessage />
                         </div>
 

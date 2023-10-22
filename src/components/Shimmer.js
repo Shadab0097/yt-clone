@@ -2,7 +2,7 @@ import React from 'react'
 
 const Shimmer = () => {
     return (
-        <div className='flex flex-wrap m-2 mt-28 ml-24'>
+        <div className='flex flex-wrap m-2 mt-28 ml-10 md:ml-24'>
 
             <div className=' p-2 m-2 w-[330px] h-[300px] bg-gray-200'>
                

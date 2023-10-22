@@ -138,7 +138,7 @@ const Comment = ({ data }) => {
             <div>
                 <img className="rounded-full h-8 w-8 mr-4" src="https://yt3.ggpht.com/a/default-user=s88-c-k-c0x00ffffff-no-rj" alt="user" />
             </div>
-            <div>
+            <div className="">
                 <p className="font-bold">{data.name}</p>
                 <p>{data.text}</p>
             </div>
@@ -177,7 +177,7 @@ const CommentContainor = () => {
 const [commentOpen , setCommentOPen] = useState(true)
     return (
         <>
-         <div   className="bg-white p-5">
+         <div   className="bg-white md:p-5 w-screen md:w-auto">
                <div onClick={()=>{setCommentOPen(!commentOpen)}} className="mt-0 border border-b-2 cursor-pointer"> <h1 className="font-bold ">Comments</h1></div>
                 {/* <Comment data={CommentsData[0]}/> */}
                 { commentOpen &&    <CommentList comments={CommentsData} />}

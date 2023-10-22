@@ -17,7 +17,7 @@ const Sidebar = () => {
 
   return (
     <>
-      {!isMenuOpen  ? <div  className='ml-2 text-center flex flex-col items-center mt-14 fixed bg-white '>
+      {!isMenuOpen  ? <div  className=' hidden md:inline-flex ml-2 text-center flex flex-col items-center  mt-14 fixed bg-white '>
 
        <Link to="/"> <img className='mt-6 w-[24px] h-[24] text-center ' alt="homeicon" src='https://w7.pngwing.com/pngs/848/762/png-transparent-computer-icons-home-house-home-angle-building-rectangle-thumbnail.png' /></Link>
         <p className='text-sm' >Home</p>

@@ -26,7 +26,7 @@ const LiveChatMessage = () => {
     },[])
     return (
         <>
-        <div  className=' ml-[13px] border border-black h-[460px] mt-20 w-full overflow-y-scroll flex flex-col-reverse overflow-x-scroll no-scrollbar'>
+        <div  className='md:ml-[13px] border border-black h-[460px] mt-20 w-screen md:w-auto overflow-y-scroll flex flex-col-reverse overflow-x-hidden no-scrollbar'>
             {chatmessages.map((c) => <ChatMessages name={c.name} messages={c.messages} key={c.messages} />
             )}   
         </div>

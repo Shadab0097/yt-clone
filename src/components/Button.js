@@ -2,8 +2,8 @@ import React from 'react'
 
 const Button = ({name}) => {
   return (
-    <div>
-        <button className='px-3 py-2 m-1.5 bg-gray-200 rounded-lg text-sm '>{name}</button>
+    <div className='flex'>
+        <button className=' px-4 py-0 md:px-3 md:py-2 m-1.5 bg-gray-200 rounded-lg text-xs '>{name}</button>
     </div>
   )
 }

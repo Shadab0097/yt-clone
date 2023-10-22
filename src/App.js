@@ -8,6 +8,7 @@ import MainContainor from "./components/MainContainor";
 import WatchPage from "./components/WatchPage";
 import Demo from "./components/Demo";
 import SearchResults from "./components/SearchResults";
+import Footer from './components/Footer';
 
 
 const appRouter = createBrowserRouter([{
@@ -16,6 +17,7 @@ const appRouter = createBrowserRouter([{
     <>
     <Head/>
   <Body/>
+  <Footer/>
   </>
   ),
   children:[

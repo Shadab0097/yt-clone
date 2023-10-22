@@ -20,7 +20,8 @@ const VideoContainor = () => {
   // console.log(video[0])
   if (video.length === 0) { return <Shimmer/>}
   return (
-    <div className='flex flex-wrap m-2 mt-28 ml-24 absolute -z-20'>
+    <div className=''>
+    <div className='flex flex-wrap overflow-x-hidden md:m-2 pt-28 md:ml-24 absolute -z-20 justify-evenly '>
      {video[39] && <AdVideoCard info={video[39]} name="Ad"/>}
    { video.map((video)=>
 
@@ -28,6 +29,7 @@ const VideoContainor = () => {
     
     ) }
      
+    </div>
     </div>
   )
 }

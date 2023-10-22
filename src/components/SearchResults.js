@@ -24,19 +24,19 @@ const SearchResults = () => {
 		return <div>Loading...</div>;
 	}
 	return (
-		<div className="flex flex-col ml-24 mt-20">
+		<div className=" flex flex-col md:ml-24 mt-20">
 			{videos.map((video) => {
 				if (video.id.kind === "youtube#video") {
 					return (
 						<Link to={"/watch?v=" + video.id.videoId} key={video.id.videoId}>
 							{/* <Videos info={video} /> */}
-                            <div className=' p-2 m-2  h-[120px] flex items-top mb-24 '>
+                            <div className=' p-2 m-2  h-[120px] md:flex items-top md:mb-24 mb-80 '>
                         <div className=''>
                             <img className='rounded-lg w-[368px] h-[201px] ' alt='thumbnail' src={video?.snippet?.thumbnails?.medium?.url} />
                         </div>
-                        <div className='ml-5 w-[600px]'>
+                        <div className='md:ml-5 md:w-[600px] mt-3 md:mt-0'>
                             <ul>
-                                <li className='text-[20px] '>{video?.snippet?.title}</li>
+                                <li className='text-[20px] font-bold '>{video?.snippet?.title}</li>
                                 <li className="text-[16px] ">{video?.snippet?.channelTitle}</li>
                                 <li>{video?.snippet?.description}</li>
                                 {/* <li className='text-[14px]'>{video?.statistics?.viewCount} views</li> */}

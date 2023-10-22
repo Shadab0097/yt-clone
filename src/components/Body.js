@@ -1,4 +1,6 @@
 // import React, { useState } from 'react'
+
+
 import Sidebar from './Sidebar'
 // import MainContainor from './MainContainor'
 import { Outlet } from 'react-router-dom'
@@ -9,6 +11,7 @@ const Body = () => {
     <div className='flex'>
       <Outlet />
       <Sidebar />
+    
 
     </div>
   )
