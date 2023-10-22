@@ -63,7 +63,7 @@ const Head = () => {
  
 
             <div className='col-span-1 md:col-span-10 text-center '>
-                  <div className={` md:block flex items-center ${expandedSearch? 'w-full px-10 mx-16 -ml-3 ':'hidden'} px-4 `}>
+                  <div className={` md:block flex ${expandedSearch? 'w-full px-10 mx-16 -ml-3 ':'hidden'} px-4`}>
                     <input type='text' className= {`md:w-1/2 border border-gray-400 md:p-1 md:rounded-l-full ${expandedSearch ? 'px-10 rounded-l-full': 'md:px-0' }`}  value={searchQuery}
                         onChange={(e) => { setSearchQuery(e.target.value) }}
                         onFocus={()=>setShowSuggestion(true)}
@@ -72,7 +72,7 @@ const Head = () => {
 
                         
                         />
-                    <button className={`border border-gray-400 p-1 px-3 md:p-2 items-center  md:rounded-r-full ${expandedSearch && 'rounded-r-full'}`} onClick={handleSearch}><BsSearch /></button>
+                    <button className={`border border-gray-400 md:p-1 md:rounded-r-full ${expandedSearch && 'rounded-r-full'}`} onClick={handleSearch}>search</button>
                     </div>
 
                       { searchQuery && showSuggestion && <div className= {`fixed bg-white py-2 px-2 w-[25rem] shadow-lg rounded-lg border-gray-100 ml-[158px] text-left ${expandedSearch && 'ml-0 w-[22rem]'} `}>
