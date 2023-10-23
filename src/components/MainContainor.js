@@ -8,6 +8,7 @@ const MainContainor = () => {
     <div className='w-screen'>
         <ButtonList/>
         <VideoConatinor/>
+        <Footer/>
       
     </div>
   )

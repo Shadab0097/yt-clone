@@ -1,3 +1,4 @@
+
 import Sidebar from './Sidebar'
 import { Outlet } from 'react-router-dom'
 
@@ -6,6 +7,7 @@ const Body = () => {
     <div className='flex'>
       <Outlet />
       <Sidebar />
+    
     </div>
   )
 }
