@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaHouse, FaPlus,  } from "react-icons/fa6";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <div>
             <div className='md:hidden px-10  text-center flex flex-row items-center  mt-[860px] fixed z-10  bg-white w-screen justify-center h-16 '>
