@@ -75,7 +75,7 @@ const Head = () => {
                     <button className={`border border-gray-400 md:p-1 md:rounded-r-full ${expandedSearch && 'rounded-r-full'}`} onClick={handleSearch}>search</button>
                     </div>
 
-                      { searchQuery && showSuggestion && <div className= {`fixed bg-white py-2 px-2 md:w-[25rem] w-[15rem] shadow-lg rounded-lg border-gray-100 md:ml-[158px] ml-[15px] text-left ${expandedSearch && 'ml-0 w-[22rem]'} `}>
+                      { searchQuery && showSuggestion && <div className= {`fixed bg-white py-2 px-2 md:w-[25rem] w-screen shadow-lg rounded-lg border-gray-100 md:ml-[158px]  text-left ${expandedSearch && 'ml-0 w-[22rem]'} `}>
                         <ul>
                             {suggestions.map((suggestion,index) => (
                        
