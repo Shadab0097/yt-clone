@@ -5,7 +5,7 @@ import { FaHouse, FaPlus,  } from "react-icons/fa6";
 const Footer = () => {
     return (
         <div>
-            <div className='md:hidden px-10  text-center flex flex-row items-center  mt-[860px] fixed z-10  bg-white w-screen justify-center h-16 '>
+            <div className='md:hidden block px-10  text-center flex flex-row items-center  mt-[860px] fixed z-10  bg-white w-screen justify-center h-16 '>
 
                 <Link to="/"><button className='mx-5'> <FaHouse size={35}/></button></Link>
                
@@ -26,4 +26,4 @@ const Footer = () => {
     )
 }
 
-export default Footer
+export default Footer;
