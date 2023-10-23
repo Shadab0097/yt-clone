@@ -36,9 +36,9 @@ const SearchResults = () => {
 								</div>
 								<div className='md:ml-5 md:w-[600px] w-screen  mt-3 md:mt-0 '>
 									<ul className=""> 
-										<li className='text-[20px] font-bold '>{video?.snippet?.title}</li>
+										<li className='text-[20px] font-bold md:w-auto w-[370px]'>{video?.snippet?.title}</li>
 										<li className="text-[16px]">{video?.snippet?.channelTitle}</li>
-										<li className="md:w-auto w-[400px]">{video?.snippet?.description}</li>
+										<li className="md:w-auto w-[370px]">{video?.snippet?.description}</li>
 										{/* <li className='text-[14px]'>{video?.statistics?.viewCount} views</li> */}
 
 									</ul>
