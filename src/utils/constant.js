@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyDSuLrZ5bAW-7L6v4ueWhCZwsYXlWlrKNE'
+const API_KEY = 'AIzaSyDjZ4msQX59QcxDcnqDkBU4e_-cJNPlvJ4'
 
  export const LIVE_CHAT_COUNT =20;
 
