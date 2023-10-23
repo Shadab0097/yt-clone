@@ -63,7 +63,7 @@ const Head = () => {
  
 
             <div className='col-span-1 md:col-span-10 text-center '>
-                  <div className={` md:block flex ${expandedSearch? 'w-full px-10 mx-20 md:-ml-3  ml-5':'hidden'} px-4`}>
+                  <div className={` md:block flex ${expandedSearch? 'w-full px-20 mx-20 md:-ml-3 -ml-7 ':'hidden'} px-4`}>
                     <input type='text' className= {`md:w-1/2 border border-gray-400 md:p-1 md:rounded-l-full ${expandedSearch ? 'px-5 rounded-l-full': 'md:px-0' }`}  value={searchQuery}
                         onChange={(e) => { setSearchQuery(e.target.value) }}
                         onFocus={()=>setShowSuggestion(true)}
