@@ -58,7 +58,7 @@ const Head = () => {
         <div className='grid grid-flow-col items-center  w-screen fixed bg-white  z-50'>
             <div className='flex col-span-1 items-center ml-5'>
                 <img alt='hamberger ' onClick={() => toogleHandler()} className='hidden md:block h-8 ml-1 cursor-pointer' src='https://cdn.icon-icons.com/icons2/1875/PNG/512/hamburgermenu_120234.png' />
-                <img alt='youtube ' className={`w-32 h-16  -ml-5 md:h-16 md:ml-10`} src='https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500' />
+            <Link to ='/'>    <img alt='youtube ' className={`w-32 h-16  -ml-5 md:h-16 md:ml-10`} src='https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500' /></Link>
             </div>
  
 
